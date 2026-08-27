@@ -11,25 +11,14 @@ import os
 # ============================================================
 
 PROJECT_PATH = "/content/drive/MyDrive/EEDC_Outage_Predictor"
+
 MODEL_PATH = "models/eedc_outage_model.pkl"
-    "models",
 
+THRESHOLD_PATH = "models/prediction_threshold.pkl"
 
+DATA_PATH = "data/outage_data.csv"
 
-THRESHOLD_PATH =
-    "models",
-    "prediction_threshold.pkl"
-
-
-DATA_PATH =
-    "data",
-    "outage_data.csv"
-
-
-EVALUATION_PATH =
-    "outputs",
-    "model_evaluation.json"
-
+EVALUATION_PATH = "outputs/model_evaluation.json"
 
 # ============================================================
 # PAGE CONFIGURATION
