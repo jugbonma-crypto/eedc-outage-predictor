@@ -11,30 +11,25 @@ import os
 # ============================================================
 
 PROJECT_PATH = "/content/drive/MyDrive/EEDC_Outage_Predictor"
-
-MODEL_PATH = os.path.join(
-    PROJECT_PATH,
+MODEL_PATH = "models/eedc_outage_model.pkl"
     "models",
-    "eedc_outage_model.pkl"
-)
 
-THRESHOLD_PATH = os.path.join(
-    PROJECT_PATH,
+
+
+THRESHOLD_PATH =
     "models",
     "prediction_threshold.pkl"
-)
 
-DATA_PATH = os.path.join(
-    PROJECT_PATH,
+
+DATA_PATH =
     "data",
     "outage_data.csv"
-)
 
-EVALUATION_PATH = os.path.join(
-    PROJECT_PATH,
+
+EVALUATION_PATH =
     "outputs",
     "model_evaluation.json"
-)
+
 
 # ============================================================
 # PAGE CONFIGURATION
