@@ -5,7 +5,21 @@ import numpy as np
 import joblib
 import json
 import os
+from pathlib import Path
+import joblib
+import streamlit as st
 
+# Resolves the absolute path to the directory where app.py is saved
+BASE_DIR = Path(__file__).resolve().parent
+
+# Set the path to the model in your 'models' subfolder
+MODEL_PATH = BASE_DIR / "models" / "eedc_outage_model.pkl"
+
+@st.cache_resource
+def load_model():
+    return joblib.load(MODEL_PATH)
+
+model = load_model()
 # ============================================================
 # CONFIGURATION
 # ============================================================
